@@ -2,7 +2,7 @@
 <project
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<modelVersion>4.0.0</modelVersion>
+	<modelVersion>5.0.0</modelVersion>
     <groupId>com.ksapp</groupId>
     <artifactId>ks</artifactId>
     <version>3-SNAPSHOT</version>
@@ -44,7 +44,7 @@
    <snapshotRepository>
      <id>deployment</id>
 	 <name>internal-Snapshot</name>
-	 <url>http://35.192.165.224:8081/repository/maven-snapshots/</url>
+	 <url>http://34.69.21.213:8081/repository/maven-snapshots/</url>
    </snapshotRepository>
    </distributionManagement>
 </project>
