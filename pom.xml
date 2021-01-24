@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+    <groupId>com.ksapp</groupId>
+    <artifactId>ks</artifactId>
+    <version>3-SNAPSHOT</version>
+   <packaging>war</packaging>
+   <name>Web Application</name>
+   <description>Java Webapp</description>
+    <dependencies>
+    	<dependency>
+		  	<groupId>net.wasdev.maven.tools.targets</groupId>
+		  	<artifactId>liberty-target</artifactId>
+		  	<version>RELEASE</version>
+		  	<type>pom</type>
+		  	<scope>provided</scope>
+  		</dependency>
+  </dependencies>
+
+  <build>
+    <finalName>${project.name}</finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.1.1</version>
+        <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.0.2</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+   <distributionManagement>
+   <snapshotRepository>
+     <id>deployment</id>
+	 <name>internal-Snapshot</name>
+	 <url>http://35.192.165.224:8081/repository/maven-snapshots/</url>
+   </snapshotRepository>
+   </distributionManagement>
+</project>
