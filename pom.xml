@@ -32,6 +32,14 @@
       Start Prometheus metrics stuff.
 
       This headless service is used to collect application level metrics
+
+
+
+
+
+
+
+
       for ingestion into Prometheus.
     -->
     <fabric8.service.name>${project.artifactId}</fabric8.service.name>
